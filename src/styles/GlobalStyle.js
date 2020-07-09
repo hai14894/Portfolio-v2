@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     ${modernNormalize}
 
     * {
+        background : #f0f0f0
         box-sizing: border-box;
     }
 
