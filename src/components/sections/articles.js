@@ -85,7 +85,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
       border-radius: ${({ theme }) => theme.borderRadius};
       transition: box-shadow 0.3s ease-out;
       &:hover {
+        transform: translate3d(0px, -0.125rem, 0px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.32);
+        transition: all 0.3s ease-out;
       }
       &:hover ${Underlining} {
         box-shadow: inset 0 -1rem 0 ${({ theme }) => theme.colors.secondary};
@@ -146,7 +148,7 @@ const Articles = () => {
       animate={articlesControls}
     >
       <StyledContentWrapper>
-        <h3 className="section-title">Latest Articles on Medium</h3>
+        <h3 className="section-title"> Articles on Medium</h3>
         <div className="articles">
           {articles
             ? articles.map(item => (
@@ -161,7 +163,7 @@ const Articles = () => {
                   <div className="card">
                     <span className="category">
                       <Underlining color="tertiary" hoverColor="secondary">
-                        {item.categories[2]}
+                        {item.categories[4]}
                       </Underlining>
                     </span>
                     <h4 className="title">{item.title}</h4>
