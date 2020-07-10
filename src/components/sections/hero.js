@@ -33,6 +33,25 @@ const StyledContentWrapper = styled(ContentWrapper)`
       display: flex;
       justify-content: flex-start;
       align-items: center;
+
+      position: relative;
+    left: 0px;
+    animation-name: my-text-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear; 
+    }
+    @keyframes my-text-animation { 
+        from{left:-100px;
+        color:#f9f9f9;
+    }
+    to {
+        left:0px;
+    color:black;
+    
+    font-weight:bold;
+    
+    }
     }
     .emoji {
       margin-left: 0.75rem;
@@ -52,6 +71,23 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .subtitle {
       margin-top: -0.75rem;
+      position: relative;
+    animation-name: my-text-animation2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear; 
+    }
+    @keyframes my-text-animation2 { 
+        from{left:100px;
+        color:#f9f9f9;
+    }
+    to {
+        left:0px;
+    color:black;
+    
+    font-weight:bold;
+    
+    }
     }
     .description {
       font-size: 1.125rem;
