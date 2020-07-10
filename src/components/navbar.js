@@ -20,11 +20,13 @@ const StyledNav = styled.nav`
   }
   .nav-link {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 1000;
     text-align: center;
     position: relative;
     margin: 0 0 0 1.25rem;
     padding: 0;
+    &:hover {
+      transform: translate3d(0px, -0.125rem, 0px);}
     &::before {
       
       transition: 300ms ease-out;

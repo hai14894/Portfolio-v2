@@ -57,9 +57,11 @@ const StyledNav = styled.nav`
   }
   .nav-link {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 1000;
     text-align: center;
     padding: 1.5rem 0;
+    &:hover {
+      transform: translate3d(0px, -0.125rem, 0px);}
   }
   .cta-btn {
     width: auto;
