@@ -35,11 +35,11 @@ const StyledContentWrapper = styled(ContentWrapper)`
       align-items: center;
 
       position: relative;
-    left: 0px;
-    animation-name: my-text-animation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    transition-timing-function: linear; 
+      left: 0px;
+      animation-name: my-text-animation;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      transition-timing-function: linear; 
     }
     @keyframes my-text-animation { 
         from{left:-100px;

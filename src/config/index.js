@@ -36,7 +36,7 @@ module.exports = {
         
         
     ],
-  
+
     navLinks: {
         menu: [
             {
@@ -57,15 +57,4 @@ module.exports = {
             }
         ]
     },
-
-    footerLinks: [
-        {
-            name: "Privacy",
-            url: "/privacy"
-        },
-        {
-            name: "Imprint",
-            url: "/imprint"
-        }
-    ]
 }

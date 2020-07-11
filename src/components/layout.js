@@ -8,7 +8,7 @@ import Context from "../context/"
 import Theme from "../styles/Theme"
 import GlobalStyle from "../styles/GlobalStyle"
 import Header from "./header"
-import Footer from "./footer"
+
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== "undefined") {
@@ -41,7 +41,6 @@ const Layout = ({ children, splashScreen }) => {
           <GlobalStyle />
           <Header />
           <main id="main-content">{children}</main>
-          <Footer />
         </ThemeProvider>
       </Context.Provider>
     </StyledLayoutWrapper>

@@ -17,11 +17,13 @@ const StyledSection = styled(motion.section)`
   margin-top: 6rem;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
   && {
+    padding-right: 2.5rem;
     width: 100%;
     /* Don't stretch container over the full page width */
     max-width: 45rem;
