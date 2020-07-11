@@ -1,8 +1,8 @@
 module.exports = {
 
     author: "hai14894",
-    siteTitle: "Gatsby Starter Portfolio Minimal",
-    siteDescription: "A modern one-page portfolio with a clean yet expressive design.",
+    siteTitle: "Hai's portfolio",
+    siteDescription: "A modern and simple one-page portfolio to showcase my web development skills",
     siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
     siteLanguage: "en_US",
     siteIcon: "src/content/favicon.png", // Relative to gatsby-config file
