@@ -176,7 +176,8 @@ const StyledProject = styled(motion.div)`
         transition: all 0.3s ease-out;
       }
       svg:hover {
-        fill: ${({ theme }) => theme.colors.primary};
+        transform: translate3d(0px, -0.125rem, 0px);
+
       }
     }
   }
@@ -305,7 +306,7 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <GithubIcon name="github" color="#888888" />
+                          <GithubIcon name="github" color="#000000" />
                         </a>
                       )}
                       {frontmatter.external && (
@@ -315,7 +316,7 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <ExternalIcon name="external" color="#888888" />
+                          <ExternalIcon name="external" color="#000000" />
                         </a>
                       )}
                     </div>
