@@ -304,7 +304,8 @@ const Projects = ({ content }) => {
                           href={frontmatter.github}
                           target="_blank"
                           rel="nofollow noopener noreferrer"
-                          aria-label="External Link"
+                          aria-label="Github"
+                          tooltipText="Github"
                         >
                           <GithubIcon name="github" color="#000000" />
                         </a>
@@ -315,10 +316,12 @@ const Projects = ({ content }) => {
                           target="_blank"
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
+                          tooltip="External Link"
                         >
                           <ExternalIcon name="external" color="#000000" />
                         </a>
                       )}
+                      
                     </div>
                   </div>
                   {/* If image in viewport changes, update state accordingly */}

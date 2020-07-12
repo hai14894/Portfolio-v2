@@ -14,8 +14,6 @@ module.exports = {
     mediumRssFeed: " https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40hohoanghai14894",
     shownArticles: 3,
     
-    // There are icons available for the following platforms: 
-    // Medium, GitHub, LinkedIn, XING, Behance
     socialMedia: [
         {
             name: "Github",
