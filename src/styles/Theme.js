@@ -3,7 +3,7 @@ module.exports = {
     primary: "#000000",
     secondary: "#43dde6",
     tertiary: "#F2F2F2",
-    text: "#364f6b"
+    text: "#0e153a"
   },
   breakpoints: {
     xs: "480px",

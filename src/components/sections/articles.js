@@ -74,6 +74,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .card {
+      background-color: #b4f1f1;
       width: 16.25rem;
       height: 12rem;
       display: flex;
