@@ -167,7 +167,7 @@ const Articles = () => {
                         {item.categories[4]}
                       </Underlining>
                     </span>
-                    <h4 className="title">{item.title}</h4>
+                    <p className="title">{item.title}</p>
                     <span className="date">{parseDate(item.pubDate)}</span>
                   </div>
                 </a>
