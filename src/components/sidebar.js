@@ -77,7 +77,7 @@ const StyledNav = styled.nav`
 `
 
 const Sidebar = ({ open, setOpen }) => {
-  const { menu, button } = navLinks
+  const { menu } = navLinks
   return (
     <>
       <StyledContainer open={open} aria-hidden={!open} tabIndex={open ? 1 : -1}>

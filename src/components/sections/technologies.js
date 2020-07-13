@@ -41,11 +41,12 @@ const StyledContentWrapper = styled(ContentWrapper)`
 `
 
 const StyledInterests = styled.div`
+  
   display: grid;
   /* Calculate how many columns are needed, depending on interests count */
   grid-template-columns: repeat(
     ${({ itemCount }) => Math.ceil(itemCount / 2)},
-    15.625rem
+    10rem
   );
   grid-template-rows: repeat(2, auto);
   grid-auto-flow: column;
@@ -94,16 +95,23 @@ const StyledInterests = styled.div`
   }
 
   .interest {
-    width: 15.625rem;
+    background-color: white;
+    width: 10rem;
     height: 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;
-    border: 0.125rem solid ${({ theme }) => theme.colors.primary};
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
     border-radius: ${({ theme }) => theme.borderRadius};
+  }
+
+    .icon-name{
+      font-weight: bold;
+    }
     .icon {
       margin-right: 0.5rem;
+      padding: 2px;
     }
   }
 `
@@ -158,7 +166,7 @@ const Interests = ({ content }) => {
               initial={{ opacity: 0, scaleY: 0 }}
               animate={iControls}
             >
-                <Img className="icon" fixed={icon.childImageSharp.fixed} /> {name}
+                <Img className="icon" fixed={icon.childImageSharp.fixed} /> <span className="icon-name">{name}</span>
             </motion.div>
           ))}
           {shownInterests < interests.length && (
@@ -167,9 +175,9 @@ const Interests = ({ content }) => {
                 onClick={() => showMoreItems()}
                 type="button"
                 textAlign="left"
-                color="primary"
+                color="secondary"
               >
-                + Load more
+                + Load more...
               </Button>
             </motion.div>
           )}

@@ -108,7 +108,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
       .date {
         font-size: 0.75rem;
-        color: #555555;
+        color: #000000;
         letter-spacing: +0.5px;
       }
     }

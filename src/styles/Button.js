@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const StyledButton = styled.button`
-  width: 15.625rem;
+  width: 10rem;
   height: 3rem;
-  background-color: ${({ theme, color }) => theme.colors[color] || "black"};
+  background-color: ${({ theme, color }) => theme.colors[color] || "white"};
   color: #ffffff;
   padding: 1rem;
   margin: 0 ${({ center }) => center ? "auto" : "0"};
