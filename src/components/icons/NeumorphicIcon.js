@@ -1,6 +1,6 @@
 import React from "react"
 import githubIcon from "../assets/github.png"
-import linkedinIcon from "../assets/linkedIn.svg"
+import linkedinIcon from "../assets/linkedin.svg"
 import mediumIcon from "../assets/medium.png"
 import twitterIcon from "../assets/twitter.png"
 import NeumorphicStyle from "./NeumorphicStyle"
