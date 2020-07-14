@@ -3,7 +3,7 @@ module.exports = {
     author: "hai14894",
     siteTitle: "Hai's portfolio",
     siteDescription: "A modern and simple one-page portfolio to showcase my web development skills",
-    siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    siteUrl: "https://hai14894.me",
     siteLanguage: "en_US",
     siteIcon: "src/content/favicon.png", // Relative to gatsby-config file
 

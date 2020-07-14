@@ -40,14 +40,12 @@
     color: black;
     text-align: center;
 
-    /* Position */
     position: absolute;
     top: 100%;
     right: 0;
     left: 0;
     font-size: 15px;
     
-    /* min-width: fit-content; */
 }
 
 .icon:hover .tooltip {
