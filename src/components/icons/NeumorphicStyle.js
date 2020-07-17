@@ -6,9 +6,9 @@ import {Link} from 'gatsby'
 const NeumorphicIcon = props => {
 return (
 <span className={styles.icon}>
-    <Link to={props.url} target="__blank">
+    <a href={props.url} target="__blank">
         <img src={props.src} alt={props.alt} />
-    </Link>
+    </a>
     {props.tooltip && (
     <span className={styles.tooltip}>{props.tooltipText}</span>
     )}
