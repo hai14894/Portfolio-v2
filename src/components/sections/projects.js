@@ -11,7 +11,7 @@ import ContentWrapper from "../../styles/ContentWrapper"
 import Underlining from "../../styles/Underlining"
 import Button from "../../styles/Button"
 import ExternalIcon from "../icons/external"
-import GithubIcon from '../icons/github'
+import GithubIcon from "../icons/github"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -177,7 +177,6 @@ const StyledProject = styled(motion.div)`
       }
       svg:hover {
         transform: translate3d(0px, -0.125rem, 0px);
-
       }
     }
   }
@@ -321,17 +320,19 @@ const Projects = ({ content }) => {
                           <ExternalIcon name="external" color="#000000" />
                         </a>
                       )}
-                      
                     </div>
                   </div>
                   {/* If image in viewport changes, update state accordingly */}
+
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
-                    <Img
-                      className="screenshot"
-                      fluid={frontmatter.screenshot.childImageSharp.fluid}
-                    />
+                    <a href={frontmatter.external} style={{width: '100%', height: '100%'}}>
+                      <Img
+                        className="screenshot"
+                        fluid={frontmatter.screenshot.childImageSharp.fluid}
+                      />
+                    </a>
                   </VisibilitySensor>
                 </StyledProject>
               </VisibilitySensor>
@@ -341,19 +342,19 @@ const Projects = ({ content }) => {
       </StyledContentWrapper>
       {sectionDetails.frontmatter.buttonVisible === "true" && (
         <motion.a
-        ref={bRef}
-        variants={bVariants}
-        animate={bOnScreen ? "visible" : "hidden"}
-        className="cta-btn"
-        href={sectionDetails.frontmatter.buttonUrl}
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        aria-label="External Link"
-      >
-        <Button type="button" textAlign="center" color="primary" center>
-          {sectionDetails.frontmatter.buttonText}
-        </Button>
-      </motion.a>
+          ref={bRef}
+          variants={bVariants}
+          animate={bOnScreen ? "visible" : "hidden"}
+          className="cta-btn"
+          href={sectionDetails.frontmatter.buttonUrl}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          aria-label="External Link"
+        >
+          <Button type="button" textAlign="center" color="primary" center>
+            {sectionDetails.frontmatter.buttonText}
+          </Button>
+        </motion.a>
       )}
     </StyledSection>
   )

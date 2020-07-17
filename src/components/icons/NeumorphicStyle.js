@@ -1,7 +1,6 @@
 
 import React from "react"
 import styles from "./NeumorphicStyle.module.css"
-import {Link} from 'gatsby'
 
 const NeumorphicIcon = props => {
 return (
