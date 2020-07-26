@@ -14,26 +14,6 @@ module.exports = {
     mediumRssFeed: " https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40hohoanghai14894",
     shownArticles: 3,
     
-    socialMedia: [
-        {
-            name: "Github",
-            url: "https://github.com/hai14894"
-        },
-        {
-            name: "Linkedin",
-            url: "https://www.linkedin.com/in/hai14894/"
-        },
-        {
-            name: "Twitter",
-            url: "https://twitter.com/hai14894"
-        },
-        {
-            name: "Medium",
-            url: "https://medium.com/@hohoanghai14894"
-        },
-        
-        
-    ],
 
     navLinks: {
         menu: [
