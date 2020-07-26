@@ -14,7 +14,7 @@ import { splashScreen } from "../config"
 
 const IndexPage = ({ data }) => (
   <Layout splashScreen={splashScreen}>
-    <SEO title="Hai's portfolio." />
+    <SEO title="hai14894" />
     <Hero content={data.hero.edges} />
     
     {/* Articles is popul ated via Medium RSS Feed fetch */}
